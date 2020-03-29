@@ -7,6 +7,7 @@ export default class SearchBar extends Component {
       <div className='container searchBar'>
         <form
           className="bookSearch"
+          onSubmit={e => this.props.submitSearch(e)}
         >
           <label htmlFor="search">Search:</label>
           <input
@@ -14,8 +15,9 @@ export default class SearchBar extends Component {
             name="search"
             id="search"
             placeholder="Book"
+            onChange={e => this.props.updateSearch(e.target.value)}
           />
-          <button type="submit" >Search</button>
+          <button type="submit">Search</button>
         </form>
       </div>
     )

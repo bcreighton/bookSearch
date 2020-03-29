@@ -7,8 +7,14 @@ export default class SearchHeader extends Component {
   render() {
     return (
       <section className='searchHeader'>
-        <SearchBar />
-        <Filters />
+        <SearchBar
+          submitSearch={e => this.props.submitSearch(e)}
+          updateSearch={userInput => this.props.updateSearch(userInput)}
+        />
+        <Filters
+          updateBookType={bookType => this.props.updateBookType(bookType)}
+          updatePrintType={printType => this.props.updatePrintType(printType)}
+        />
       </section>
     )
   }

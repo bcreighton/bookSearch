@@ -1,0 +1,29 @@
+.container.filters {
+  height: 30px;
+  padding: 20px; 
+  background-color: rgb(194, 194, 194);
+  border-bottom: 2px solid rgb(114, 114, 114);
+}
+
+label {
+  margin-right: 15px;
+}
+
+.filterOption {
+  display: inline-block;
+}
+
+select {
+  margin: 0 20px;
+  height: 40px;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+#printType {
+  width: 200px;
+}
+
+#bookType {
+  width: 400px;
+}

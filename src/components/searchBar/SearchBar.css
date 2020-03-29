@@ -1,0 +1,22 @@
+.container.searchBar {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(158, 158, 158);
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  padding: 5px 15px;
+  vertical-align: middle;
+  font-size: 1.25rem;
+}
+
+button {
+  width: 100px;
+  height: 45px;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  border-radius: 10px;
+  cursor: pointer;
+}
